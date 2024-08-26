@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --font01: "Bebas Neue", sans-serif;
+    --font02: "Merienda";
+    --font03: Verdana, Tahoma, sans-serif;
+    --color01: #353535;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: lightgray;
+    font-family: var(--font03);
+}
+
+header{
+    background-color: var(--color01);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    font-family: var(--font01);
+    font-weight: normal;
+    font-size: 5vw;
+}
+
+header p{
+    padding-bottom: 30px;
+    font-size: 2.5vw;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section pre{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-family: var(--font02);
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+
+section > pre {
+    white-space: pre-line;
+    padding-left: 30px;
+}
+
+.white-background{
+    background-image: url('../imagens/white-background01.jpg');
+    background-size: cover;
+}
+
+#white02{
+    background-image: url('../imagens/white-background02.jpg');
+    background-size: cover;
+}
+
+.image-background{
+    background-color: rgba(0, 0, 0, 0.205);
+    color: white;
+    box-shadow: inset 0px 7px 15px 0px rgba(0, 0, 0, 0.404);
+    background-attachment: fixed;
+}
+
+#wallpaper01{
+    background-image: url('../imagens/nature.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#wallpaper02{
+    background-image: url('../imagens/tecnologias-modernas.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.image-background > pre > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+footer{
+    background-color: var(--color01);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+
